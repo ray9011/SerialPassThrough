@@ -1,0 +1,14 @@
+void setup {
+  Serial.begin(9600);
+  Serial.begin(9600);
+}
+
+void loop {
+  if (Serial.available()) {
+    Seriall.write(Serial.read());
+  }
+   
+  if (Seriall.available()) {
+    Serial.write(Seriall.read());
+  }
+}
